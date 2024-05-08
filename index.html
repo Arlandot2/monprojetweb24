@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vente Automobile chez Arls</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#">
+                    <img src="Media/logo.png" alt="" class="logo">
+                </a>
+            </header>
+            <div class="cercle">
+
+            </div>
+            <div class=" container">
+                <div class="texte">
+                    <h2>Spécialiser véhicules <span>Sportifs et Luxueux</span></h2>
+                    <p> Achat, vente et conseil de tout véhicules Luxueux, sportif grace à une équipe de professionnels. Faire confiance à AutoPro, c'est l'assurrance d'un suivi et service de qualité haut game</p>
+                    <a href="mailto:jaoninaarlandotramanarintsoa@gmail.com">Contactez nous</a>
+                </div>
+                <div class="imgBox"> 
+                    <img src="Media/ferari.png" alt="" class="ferari">
+                </div>
+                <ul class="catalogue">
+                    <li>
+                       <img src="Media/ferari.png" alt="" onclick="imgSlider('Media/ferari.png');changeCouleurCercle('red')"></li>
+                       <li><img src="Media/Lambo.png" alt="" onclick="imgSlider('Media/Lambo.png');changeCouleurCercle('#2dc250')"></li>
+                       <li><img src="Media/amg.png" alt=""onclick="imgSlider('Media/amg.png');changeCouleurCercle('#939890')"></li>
+                       <li><img src="Media/bentley.png" alt=""onclick="imgSlider('Media/bentley.png');changeCouleurCercle('#9dbfcc')"></li>
+                </ul>
+                <ul class="reseau">
+                    <li><a href="https://www.facebook.com/arlando.bastose"> <img src="Media/fb.png" alt=""></a></li>
+                    <li><a href="https://instagram.com/johnprince174"> <img src="Media/insta.png" alt=""></a></li>
+                    <li><a href="https://wa.me/+261344519614 "> <img src="Media/whatsapp.PNG" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.ferari').src = anything;
+            }
+            function changeCouleurCercle(color){
+                const cercle = document.querySelector('.cercle');
+                cercle.style.background=color;
+            }
+
+        </script>
+    </body>
+</html>
